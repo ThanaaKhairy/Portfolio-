@@ -263,6 +263,8 @@ body {
 /* تحسين للموبايل */
 @media (max-width: 1200px) {
   .hero .row {
+    padding-top: 120px; /* مسافة أقل للموبايل */
+
     gap: 80px; /* المسافة تقل شوية في الشاشات المتوسطة */
   }
   
@@ -278,6 +280,8 @@ body {
 
 @media (max-width: 992px) {
   .hero .row {
+            padding-top: 120px; /* مسافة أقل للموبايل */
+
     flex-direction: column;
     text-align: center;
     gap: 70px; /* المسافة مناسبة للعرض العمودي */
@@ -316,6 +320,8 @@ body {
 
 @media (max-width: 768px) {
   .hero .row {
+            padding-top: 120px; /* مسافة أقل للموبايل */
+
     gap: 50px;
   }
   
@@ -347,6 +353,8 @@ body {
 
 @media (max-width: 576px) {
   .hero .row {
+            padding-top: 120px; /* مسافة أقل للموبايل */
+
     gap: 40px;
   }
   
@@ -3000,4 +3008,46 @@ textarea.form-control {
 [data-theme="dark"] .stat-box {
     background: var(--card-bg, #1e293b);
     border-color: var(--border-light, #334155);
+}
+/* ===== Toggler Button Styling ===== */
+.navbar-toggler {
+    border: 1px solid var(--primary-color, #6c9e8f) !important;
+    background: transparent !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(108, 158, 143, 0.25);
+}
+
+/* تغيير لون الأيقونة حسب الوضع */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30, 43, 60, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dark Mode - تغيير لون الأيقونة */
+[data-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(226, 232, 240, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* تغيير لون البوردر عند الـ hover */
+.navbar-toggler:hover {
+    background: rgba(108, 158, 143, 0.1) !important;
+    border-color: var(--primary-color, #6c9e8f) !important;
+}
+
+[data-theme="dark"] .navbar-toggler:hover {
+    background: rgba(122, 179, 165, 0.2) !important;
+}
+
+/* تحسين ظهور الشعار في Dark Mode */
+[data-theme="dark"] .navbar-brand img {
+    filter: brightness(0) invert(1); /* يحول الصورة للأبيض */
+    opacity: 0.9;
+}
+
+/* أو لو عاوزة تأثير أخف */
+[data-theme="dark"] .navbar-brand img {
+    filter: brightness(1.2) drop-shadow(0 0 2px rgba(255,255,255,0.3));
 }
