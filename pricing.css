@@ -1,0 +1,364 @@
+        /* ===== Root Variables for Light & Dark Modes ===== */
+        :root {
+            --primary-color: #6c9e8f;
+            --primary-dark: #558b7c;
+            --secondary-color: #1e2b3c;
+            --text-color: #5b6f82;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border-light: #e9ecef;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 20px 40px rgba(108, 158, 143, 0.15);
+            --note-bg: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #7ab3a5;
+            --primary-dark: #6c9e8f;
+            --secondary-color: #e2e8f0;
+            --text-color: #94a3b8;
+            --light-bg: #0f172a;
+            --card-bg: #1e293b;
+            --border-light: #334155;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 20px 40px rgba(122, 179, 165, 0.25);
+            --note-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Arabic font */
+        [dir="rtl"] body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .pricing-page {
+            padding: 80px 0;
+            min-height: 100vh;
+        }
+
+        /* ===== Header Styles ===== */
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            background: rgba(108, 158, 143, 0.1);
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .pricing-header h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .pricing-header .lead {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        .pricing-note {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            background: var(--note-bg);
+            padding: 18px 25px;
+            border-radius: 16px;
+            max-width: 850px;
+            margin: 0 auto;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+        }
+
+        [dir="rtl"] .pricing-note {
+            text-align: right;
+        }
+
+        .pricing-note i {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        /* ===== Pricing Cards ===== */
+        .pricing-card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 30px 25px;
+            box-shadow: var(--shadow);
+            height: 100%;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 5px 20px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-category {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .plan-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .plan-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .plan-price small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-color);
+        }
+
+        .plan-description {
+            color: var(--text-color);
+            font-size: 0.95rem;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            flex: 1;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--border-light);
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+        }
+
+        [dir="rtl"] .feature-list li {
+            flex-direction: row-reverse;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            width: 22px;
+            flex-shrink: 0;
+        }
+
+        .btn-pricing {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-top: auto;
+            cursor: pointer;
+        }
+
+        .btn-pricing:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 158, 143, 0.2);
+        }
+
+        .btn-pricing.custom {
+            background: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+
+        .btn-pricing.custom:hover {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        /* ===== Control Buttons Container ===== */
+        .control-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .control-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border-light);
+            color: var(--secondary-color);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .control-btn:hover {
+            transform: rotate(15deg);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .lang-btn {
+            width: auto;
+            padding: 0 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            gap: 5px;
+        }
+
+        .lang-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* ===== Back to Portfolio Link ===== */
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--card-bg);
+            border: 1px solid var(--border-light);
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .back-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        [dir="rtl"] .back-link:hover {
+            transform: translateX(5px);
+        }
+
+        /* ===== Responsive Design ===== */
+        @media (max-width: 991px) {
+            .pricing-header h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pricing-page {
+                padding: 60px 0;
+            }
+
+            .pricing-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .pricing-note {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .back-link {
+                top: 10px;
+                left: 10px;
+                padding: 8px 15px;
+                font-size: 0.85rem;
+            }
+
+            .control-buttons {
+                top: 10px;
+                right: 10px;
+            }
+        }

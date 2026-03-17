@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanaa Khairy - Full Stack Developer</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./logo/download.png" alt="Thanaa Khairy" style="height: 50px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-ar="عنّي">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education" data-en="Education"
+                            data-ar="التعليم">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-en="Skills"
+                            data-ar="المهارات">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-en="Experience"
+                            data-ar="الخبرات">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-en="Services"
+                            data-ar="الخدمات">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-en="Projects"
+                            data-ar="المشاريع">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements" data-en="Achievements"
+                            data-ar="الإنجازات">Achievements</a></li> <!-- القسم الجديد -->
+
+                    <li class="nav-item"><a class="nav-link" href="#testimonials" data-en="testimonials"
+                            data-ar="التعليم">Testimonials</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" href="#contact" data-en="Contact"
+                            data-ar="اتصل بي">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2 ms-3">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">🇺🇸 EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="hero-badge">
+                        <span data-en="Welcome to my world" data-ar="مرحباً في عالمي">Welcome to my world</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span data-en="Hi, I'm" data-ar="مرحباً، أنا">Hi, I'm</span>
+                        <br>
+                        <span class="highlight" data-en="Thanaa Khairy" data-ar="ثناء خيري">Thanaa Khairy</span>
+                    </h1>
+                    <h2 class="hero-subtitle" data-en="Full-Stack Web Developer" data-ar="مطورة ويب شاملة">Full-Stack
+                        Web Developer</h2>
+                    <p class="hero-description"
+                        data-en="I build scalable, high-performance web applications using React.js and Node.js."
+                        data-ar="أبني تطبيقات ويب قابلة للتطوير وعالية الأداء باستخدام React.js و Node.js ">
+                        I build scalable, high-performance web applications using React.js and Node.js
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label" data-en="Projects" data-ar="مشاريع">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-en="Internships" data-ar="تدريبات">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label" data-en="Learning" data-ar="تعلم">Learning</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" data-en="Let's Talk" data-ar="هيا نتحدث">Let's
+                            Talk</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1pI2manVPaatWFIaf_1-_yMK_8uASySfI"
+                            download="Thanaa_Khairy_CV.pdf" target="_blank" class="btn btn-primary shadow-sm">
+                            <i class="bi bi-download me-2"></i>
+                            <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="./logo/coding-neon-dreams-stockcake.jpg" alt="Thanaa Khairy" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-image">
+                        <img src="./logo/download (3).png" alt="Thanaa Khairy" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="about-content">
+                        <span class="section-subtitle" data-en="About Me" data-ar="عنّي">About Me</span>
+                        <h2 class="section-title" data-en="Driven by Passion & Performance"
+                            data-ar="مدفوعة بالشغف والأداء">
+                            Driven by Passion & Performance
+                        </h2>
+
+                        <p class="about-text"
+                            data-en="I am Thanaa, a passionate Full-Stack Developer with a strong foundation in Computer Science from Helwan University. I specialize in building scalable and efficient web applications using React.js and Node.js, with hands-on experience across multiple projects, focusing on clean code, performance, and maintainable solutions."
+                            data-ar="أنا ثناء، مطورة ويب شاملة شغوفة مع أساس قوي في علوم الحاسب من جامعة حلوان. أتخصص في بناء تطبيقات ويب قابلة للتطوير وفعالة باستخدام React.js و Node.js، مع خبرة عملية في عدة مشاريع، مع التركيز على الكود النظيف والأداء والحلول القابلة للصيانة.">
+                            I am Thanaa, a passionate Full-Stack Developer with a strong foundation in Computer Science
+                            from Helwan University. I specialize in building scalable and efficient web applications
+                            using React.js and Node.js, with hands-on experience across multiple projects, focusing on
+                            clean code, performance, and maintainable solutions.
+                        </p>
+
+                        <p class="about-text"
+                            data-en="My journey involves hands-on experience with complex projects, implementing REST APIs, database design, and modern frontend frameworks. Currently enhancing my skills through the Digilians Professional Track for React & Node.js."
+                            data-ar="رحلتي تتضمن خبرة عملية في مشاريع معقدة، تنفيذ REST APIs، تصميم قواعد البيانات، وأطر العمل الحديثة للواجهات. حالياً أطور مهاراتي من خلال مسار Digilians الاحترافي لـ React و Node.js.">
+                            My journey involves hands-on experience with complex projects, implementing REST APIs,
+                            database design, and modern frontend frameworks. Currently enhancing my skills through the
+                            Digilians Professional Track for React & Node.js.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span><strong data-en="Projects:" data-ar="المشاريع:">Projects:</strong> <span
+                                        data-en="4" data-ar="4">4</span></span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span><strong data-en="Location:" data-ar="الموقع:">Location:</strong> <span
+                                        data-en="Giza, Egypt" data-ar="الجيزة، مصر">Giza, Egypt</span></span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span><strong data-en="Availability:" data-ar="التوفر:">Availability:</strong> <span
+                                        data-en="Open to Work" data-ar="متاحة للعمل">Open to Work</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="Education & Certifications"
+                    data-ar="التعليم والشهادات">Education & Certifications</span>
+                <h2 class="section-title" data-en="My Learning Journey" data-ar="رحلة التعلم الخاصة بي">My Learning
+                    Journey</h2>
+            </div>
+
+            <!-- Education Row -->
+            <div class="education-row mt-5">
+                <h3 class="sub-section-title" data-en="🎓 Education" data-ar="🎓 التعليم">🎓 Education</h3>
+                <div class="row g-4 mt-3">
+                    <!-- Bachelor Degree with Logo -->
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="education-card with-logo">
+                            <div class="card-header">
+                                <div class="university-logo">
+                                    <img src="./logo/images (1).png" style="width: 100%;" alt="Helwan University">
+
+                                </div>
+                                <div class="header-content">
+                                    <h3 data-en="Bachelor's Degree in Computer Science" data-ar="بكالوريوس علوم الحاسب">
+                                        Bachelor's Degree in Computer Science
+                                    </h3>
+                                    <p class="institution" data-en="Helwan University" data-ar="جامعة حلوان">
+                                        Helwan University
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <i class="bi bi-calendar3"></i>
+                                        <span>2021 — 2025</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-star-fill"></i>
+                                        <span><span data-en="GPA:" data-ar="المعدل:">GPA:</span> 3.35/4</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-award-fill"></i>
+                                        <span><span data-en="Grade:" data-ar="التقدير:">Grade:</span> <span
+                                                data-en="Very Good" data-ar="جيد جداً">Very Good</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="certificates-row mt-5 mb-5">
+                <h3 class="sub-section-title" data-en="📜 Certifications" data-ar="📜 الشهادات المهنية">📜
+                    Certifications</h3>
+                <div class="row g-4 mt-3">
+                    <!-- Certificate 1 - Digilians -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <i class="fa-solid fa-certificate"></i> <!-- أيقونة شهادة أجمل -->
+                            </div>
+                            <div class="certificate-content">
+                                <h4 data-en="Full-Stack Web Development" data-ar="تطوير الويب الشامل">Full-Stack Web
+                                    Development</h4>
+                                <p class="issuer">
+                                    <i class="fa-regular fa-building"></i> <!-- أيقونة مفرغة أرقى -->
+                                    <span>Digilians Professional Track</span>
+                                </p>
+                                <p class="date">
+                                    <i class="fa-regular fa-calendar-check"></i> <!-- أيقونة مفرغة -->
+                                    <span>2026 — <span data-en="Present" data-ar="حالياً">Present</span></span>
+                                </p>
+                                <div class="skills-tags">
+                                    <span><i class="fa-brands fa-react"></i> React.js</span>
+                                    <span><i class="fa-brands fa-node"></i> Node.js</span>
+                                    <span><i class="fa-solid fa-cloud"></i> REST APIs</span>
+                                    <span><i class="fa-solid fa-database"></i> Database</span>
+                                </div>
+
+                                <!-- زرار الشهادة -->
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1TPZStkKlwoU0Nc-gFgzVg22bmEwXnp8_/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 - Mahara-Tech -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <i class="fa-solid fa-medal"></i> <!-- أيقونة ميدالية -->
+                            </div>
+                            <div class="certificate-content">
+                                <h4 data-en="SQL Server Development" data-ar="تطوير قواعد بيانات SQL Server">SQL Server
+                                    Development</h4>
+                                <p class="issuer">
+                                    <i class="fa-regular fa-building"></i>
+                                    <span>Mahara-Tech</span>
+                                </p>
+                                <p class="date">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>2025</span>
+                                </p>
+                                <div class="skills-tags">
+                                    <span><i class="fa-solid fa-database"></i> T-SQL</span>
+                                    <span><i class="fa-solid fa-code-branch"></i> Joins</span>
+                                    <span><i class="fa-solid fa-filter"></i> Subqueries</span>
+                                    <span><i class="fa-solid fa-gear"></i> DB Management</span>
+                                </div>
+
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1TPZStkKlwoU0Nc-gFgzVg22bmEwXnp8_/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 - 365 Data Science -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="certificate-card">
+                            <div class="certificate-icon">
+                                <i class="fa-solid fa-chart-line"></i> <!-- أيقونة رسم بياني -->
+                            </div>
+                            <div class="certificate-content">
+                                <h4 data-en="SQL for Data Science" data-ar="SQL لعلم البيانات">SQL for Data Science</h4>
+                                <p class="issuer">
+                                    <i class="fa-regular fa-building"></i>
+                                    <span>365 Data Science</span>
+                                </p>
+                                <p class="date">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>2025</span>
+                                </p>
+                                <div class="skills-tags">
+                                    <span><i class="fa-solid fa-database"></i> Data Extraction</span>
+                                    <span><i class="fa-solid fa-code-branch"></i> Advanced Joins</span>
+                                    <span><i class="fa-solid fa-chart-pie"></i> Data Manipulation</span>
+                                </div>
+
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1TPZStkKlwoU0Nc-gFgzVg22bmEwXnp8_/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="section-title" style="color: #6c9e8f;">
+                    <span data-en="My Skills" data-ar="مهاراتي">My Skills</span>
+                </h2>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs skills-tabs" id="skillsTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-layer-group me-2"></i>
+                        <span data-en="All" data-ar="الكل">All</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="frontend-tab" data-bs-toggle="tab" data-bs-target="#frontend"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-paint-brush me-2"></i>
+                        <span data-en="Frontend" data-ar="واجهات أمامية">Frontend</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-server me-2"></i>
+                        <span data-en="Backend" data-ar="خوادم">Backend</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="database-tab" data-bs-toggle="tab" data-bs-target="#database"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-database me-2"></i>
+                        <span data-en="Database" data-ar="قواعد بيانات">Database</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools" type="button"
+                        role="tab">
+                        <i class="fa-solid fa-tools me-2"></i>
+                        <span data-en="Tools" data-ar="أدوات">Tools</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="soft-tab" data-bs-toggle="tab" data-bs-target="#soft" type="button"
+                        role="tab">
+                        <i class="fa-solid fa-brain me-2"></i>
+                        <span data-en="Soft" data-ar="شخصية">Soft</span>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="skillsTabContent">
+                <!-- ALL TAB -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- React -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-react skill-icon"></i>
+                                    <h4><span data-en="React" data-ar="ريأكت">React</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Build fast, interactive UIs with reusable components — your app stays snappy at any scale."
+                                    data-ar="بناء واجهات سريعة وتفاعلية بمكونات قابلة لإعادة الاستخدام - تطبيقك يبقى سريع مهما كان حجمه.">
+                                    Build fast, interactive UIs with reusable components — your app stays snappy at any
+                                    scale.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- HTML5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                                    <h4><span data-en="HTML5" data-ar="إتش تي إم إل">HTML5</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Semantic, accessible markup that search engines love — boosting your SEO from the ground up."
+                                    data-ar="ترميز دلالي وسهل الوصول تحبه محركات البحث - يعزز ظهور موقعك في النتائج.">
+                                    Semantic, accessible markup that search engines love — boosting your SEO from the
+                                    ground up.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                                    <h4><span data-en="CSS3" data-ar="سي إس إس">CSS3</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Pixel-perfect layouts with smooth animations — your site looks polished on every device."
+                                    data-ar="تصاميم مضبوطة بالبكسل مع حركات سلسة - موقعك يظهر بشكل احترافي على كل الأجهزة.">
+                                    Pixel-perfect layouts with smooth animations — your site looks polished on every
+                                    device.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-bootstrap skill-icon" style="color: #7952B3;"></i>
+                                    <h4><span data-en="Bootstrap" data-ar="بوتستراب">Bootstrap</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Production-ready, responsive components — launch faster with a proven design system."
+                                    data-ar="مكونات متجاوبة جاهزة للإنتاج - أطلق مشروعك أسرع مع نظام تصميم موثوق.">
+                                    Production-ready, responsive components — launch faster with a proven design system.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Tailwind -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-wind skill-icon" style="color: #38B2AC;"></i>
+                                    <h4><span data-en="Tailwind" data-ar="تيلويند">Tailwind</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Rapid UI development with utility-first classes — consistent design, zero bloat."
+                                    data-ar="تطوير سريع للواجهات بكلاسات عملية - تصميم متناسق بدون تكرار.">
+                                    Rapid UI development with utility-first classes — consistent design, zero bloat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Node.js -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-node skill-icon" style="color: #339933;"></i>
+                                    <h4><span data-en="Node.js" data-ar="نود.جي إس">Node.js</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="JavaScript everywhere — one language for frontend and backend means faster delivery and lower costs."
+                                    data-ar="جافاسكريبت في كل مكان - لغة واحدة للواجهات والخوادم تعني تسليم أسرع وتكاليف أقل.">
+                                    JavaScript everywhere — one language for frontend and backend means faster delivery
+                                    and lower costs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Express.js -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-bolt skill-icon" style="color: #F7DF1E;"></i>
+                                    <h4><span data-en="Express.js" data-ar="إكسبريس.جي إس">Express.js</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Lightweight and blazing fast — ideal for RESTful APIs and microservices that need to perform."
+                                    data-ar="خفيف وسريع جداً - مثالي لواجهات API والخدمات المصغرة التي تحتاج أداء عالياً.">
+                                    Lightweight and blazing fast — ideal for RESTful APIs and microservices that need to
+                                    perform.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
+                                    <h4><span data-en="Python" data-ar="بايثون">Python</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Versatile scripting and automation — from data processing to backend logic, it handles it all."
+                                    data-ar="برمجة نصية متعددة الاستخدامات وأتمتة - من معالجة البيانات إلى منطق الخادم، يعالج كل شيء.">
+                                    Versatile scripting and automation — from data processing to backend logic, it
+                                    handles it all.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- SQL Server -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #CC2927;"></i>
+                                    <h4><span data-en="SQL Server" data-ar="إس كيو إل سيرفر">SQL Server</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Rock-solid relational database — handles complex queries and massive datasets with ease."
+                                    data-ar="قاعدة بيانات علائقية قوية - تتعامل مع الاستعلامات المعقدة والبيانات الضخمة بسهولة.">
+                                    Rock-solid relational database — handles complex queries and massive datasets with
+                                    ease.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Git -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
+                                    <h4><span data-en="Git" data-ar="جيت">Git</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Version control that keeps your codebase safe — track changes, collaborate, and roll back with confidence."
+                                    data-ar="تحكم بالإصدارات يحمي قاعدة الكود الخاصة بك - تتبع التغييرات، تعاون، واستعد الإصدارات السابقة بثقة.">
+                                    Version control that keeps your codebase safe — track changes, collaborate, and roll
+                                    back with confidence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Problem Solving -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-lightbulb skill-icon" style="color: #FFD700;"></i>
+                                    <h4><span data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span>
+                                    </h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Analytical thinking to break down complex problems and find elegant solutions."
+                                    data-ar="تفكير تحليلي لتقسيم المشاكل المعقدة وإيجاد حلول أنيقة.">
+                                    Analytical thinking to break down complex problems and find elegant solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRONTEND TAB -->
+                <div class="tab-pane fade" id="frontend" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- React -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-react skill-icon"></i>
+                                    <h4><span data-en="React" data-ar="ريأكت">React</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Build fast, interactive UIs with reusable components — your app stays snappy at any scale."
+                                    data-ar="بناء واجهات سريعة وتفاعلية بمكونات قابلة لإعادة الاستخدام - تطبيقك يبقى سريع مهما كان حجمه.">
+                                    Build fast, interactive UIs with reusable components — your app stays snappy at any
+                                    scale.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- HTML5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                                    <h4><span data-en="HTML5" data-ar="إتش تي إم إل">HTML5</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Semantic, accessible markup that search engines love — boosting your SEO from the ground up."
+                                    data-ar="ترميز دلالي وسهل الوصول تحبه محركات البحث - يعزز ظهور موقعك في النتائج.">
+                                    Semantic, accessible markup that search engines love — boosting your SEO from the
+                                    ground up.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                                    <h4><span data-en="CSS3" data-ar="سي إس إس">CSS3</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Pixel-perfect layouts with smooth animations — your site looks polished on every device."
+                                    data-ar="تصاميم مضبوطة بالبكسل مع حركات سلسة - موقعك يظهر بشكل احترافي على كل الأجهزة.">
+                                    Pixel-perfect layouts with smooth animations — your site looks polished on every
+                                    device.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-bootstrap skill-icon" style="color: #7952B3;"></i>
+                                    <h4><span data-en="Bootstrap" data-ar="بوتستراب">Bootstrap</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Production-ready, responsive components — launch faster with a proven design system."
+                                    data-ar="مكونات متجاوبة جاهزة للإنتاج - أطلق مشروعك أسرع مع نظام تصميم موثوق.">
+                                    Production-ready, responsive components — launch faster with a proven design system.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Tailwind -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-wind skill-icon" style="color: #38B2AC;"></i>
+                                    <h4><span data-en="Tailwind" data-ar="تيلويند">Tailwind</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Rapid UI development with utility-first classes — consistent design, zero bloat."
+                                    data-ar="تطوير سريع للواجهات بكلاسات عملية - تصميم متناسق بدون تكرار.">
+                                    Rapid UI development with utility-first classes — consistent design, zero bloat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND TAB -->
+                <div class="tab-pane fade" id="backend" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- Node.js -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-node skill-icon" style="color: #339933;"></i>
+                                    <h4><span data-en="Node.js" data-ar="نود.جي إس">Node.js</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="JavaScript everywhere — one language for frontend and backend means faster delivery and lower costs."
+                                    data-ar="جافاسكريبت في كل مكان - لغة واحدة للواجهات والخوادم تعني تسليم أسرع وتكاليف أقل.">
+                                    JavaScript everywhere — one language for frontend and backend means faster delivery
+                                    and lower costs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Express.js -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-bolt skill-icon" style="color: #F7DF1E;"></i>
+                                    <h4><span data-en="Express.js" data-ar="إكسبريس.جي إس">Express.js</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Lightweight and blazing fast — ideal for RESTful APIs and microservices that need to perform."
+                                    data-ar="خفيف وسريع جداً - مثالي لواجهات API والخدمات المصغرة التي تحتاج أداء عالياً.">
+                                    Lightweight and blazing fast — ideal for RESTful APIs and microservices that need to
+                                    perform.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
+                                    <h4><span data-en="Python" data-ar="بايثون">Python</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Versatile scripting and automation — from data processing to backend logic, it handles it all."
+                                    data-ar="برمجة نصية متعددة الاستخدامات وأتمتة - من معالجة البيانات إلى منطق الخادم، يعالج كل شيء.">
+                                    Versatile scripting and automation — from data processing to backend logic, it
+                                    handles it all.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Flask -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-leaf skill-icon" style="color: #E0234E;"></i>
+                                    <h4><span data-en="Flask" data-ar="فلاسك">Flask</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Lightweight Python framework for building web applications quickly and efficiently."
+                                    data-ar="إطار عمل بايثون خفيف لبناء تطبيقات الويب بسرعة وكفاءة.">
+                                    Lightweight Python framework for building web applications quickly and efficiently.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Spring Boot -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-java skill-icon" style="color: #007396;"></i>
+                                    <h4><span data-en="Spring Boot" data-ar="سبرينغ بوت">Spring Boot</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Enterprise-grade Java framework for building robust, scalable microservices."
+                                    data-ar="إطار عمل جافا للمؤسسات لبناء خدمات مصغرة قوية وقابلة للتطوير.">
+                                    Enterprise-grade Java framework for building robust, scalable microservices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATABASE TAB -->
+                <div class="tab-pane fade" id="database" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- SQL Server -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #CC2927;"></i>
+                                    <h4><span data-en="SQL Server" data-ar="إس كيو إل سيرفر">SQL Server</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Rock-solid relational database — handles complex queries and massive datasets with ease."
+                                    data-ar="قاعدة بيانات علائقية قوية - تتعامل مع الاستعلامات المعقدة والبيانات الضخمة بسهولة.">
+                                    Rock-solid relational database — handles complex queries and massive datasets with
+                                    ease.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Oracle -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #F80000;"></i>
+                                    <h4><span data-en="Oracle" data-ar="أوراكل">Oracle</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Enterprise-grade database solution with advanced security and performance features."
+                                    data-ar="حل قاعدة بيانات للمؤسسات مع ميزات أمن وأداء متقدمة.">
+                                    Enterprise-grade database solution with advanced security and performance features.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #4479A1;"></i>
+                                    <h4><span data-en="MySQL" data-ar="ماي إس كيو إل">MySQL</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Popular open-source database — reliable, fast, and perfect for web applications."
+                                    data-ar="قاعدة بيانات مفتوحة المصدر شهيرة - موثوقة وسريعة ومثالية لتطبيقات الويب.">
+                                    Popular open-source database — reliable, fast, and perfect for web applications.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- PostgreSQL -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #336791;"></i>
+                                    <h4><span data-en="PostgreSQL" data-ar="بوستجري إس كيو إل">PostgreSQL</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Advanced open-source database with excellent extensibility and standards compliance."
+                                    data-ar="قاعدة بيانات متقدمة مفتوحة المصدر مع قابلية تمديد ممتازة وتوافق مع المعايير.">
+                                    Advanced open-source database with excellent extensibility and standards compliance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOLS TAB -->
+                <div class="tab-pane fade" id="tools" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- Git -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
+                                    <h4><span data-en="Git" data-ar="جيت">Git</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Version control that keeps your codebase safe — track changes, collaborate, and roll back with confidence."
+                                    data-ar="تحكم بالإصدارات يحمي قاعدة الكود الخاصة بك - تتبع التغييرات، تعاون، واستعد الإصدارات السابقة بثقة.">
+                                    Version control that keeps your codebase safe — track changes, collaborate, and roll
+                                    back with confidence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-github skill-icon" style="color: #ffffff;"></i>
+                                    <h4><span data-en="GitHub" data-ar="جيت هب">GitHub</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Collaboration platform for code hosting, review, and project management."
+                                    data-ar="منصة تعاون لاستضافة الكود، المراجعة، وإدارة المشاريع.">
+                                    Collaboration platform for code hosting, review, and project management.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Docker -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-brands fa-docker skill-icon" style="color: #2496ED;"></i>
+                                    <h4><span data-en="Docker" data-ar="دوكر">Docker</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Containerized deployments — your apps run identically everywhere, from dev to production."
+                                    data-ar="نشر بحاويات - تطبيقاتك تعمل بنفس الطريقة في كل مكان، من التطوير إلى الإنتاج.">
+                                    Containerized deployments — your apps run identically everywhere, from dev to
+                                    production.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- REST APIs -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-plug skill-icon" style="color: #78b3a0;"></i>
+                                    <h4><span data-en="REST APIs" data-ar="واجهات REST">REST APIs</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Designing and implementing robust, scalable RESTful web services."
+                                    data-ar="تصميم وتنفيذ خدمات ويب RESTful قوية وقابلة للتطوير.">
+                                    Designing and implementing robust, scalable RESTful web services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOFT SKILLS TAB -->
+                <div class="tab-pane fade" id="soft" role="tabpanel">
+                    <div class="row g-4 mt-3">
+                        <!-- Problem Solving -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-lightbulb skill-icon" style="color: #FFD700;"></i>
+                                    <h4><span data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span>
+                                    </h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Analytical thinking to break down complex problems and find elegant solutions."
+                                    data-ar="تفكير تحليلي لتقسيم المشاكل المعقدة وإيجاد حلول أنيقة.">
+                                    Analytical thinking to break down complex problems and find elegant solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Collaboration -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-users skill-icon" style="color: #78b3a0;"></i>
+                                    <h4><span data-en="Collaboration" data-ar="تعاون">Collaboration</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Working effectively in teams, sharing knowledge, and achieving common goals."
+                                    data-ar="العمل بفعالية في فرق، مشاركة المعرفة، وتحقيق الأهداف المشتركة.">
+                                    Working effectively in teams, sharing knowledge, and achieving common goals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Adaptability -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-rotate skill-icon" style="color: #78b3a0;"></i>
+                                    <h4><span data-en="Adaptability" data-ar="تكيف">Adaptability</span></h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Quickly learning new technologies and adapting to changing requirements."
+                                    data-ar="تعلم تقنيات جديدة بسرعة والتكيف مع المتطلبات المتغيرة.">
+                                    Quickly learning new technologies and adapting to changing requirements.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Time Management -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fa-solid fa-clock skill-icon" style="color: #78b3a0;"></i>
+                                    <h4><span data-en="Time Management" data-ar="إدارة الوقت">Time Management</span>
+                                    </h4>
+                                </div>
+                                <p class="skill-desc"
+                                    data-en="Efficiently prioritizing tasks and meeting deadlines consistently."
+                                    data-ar="تحديد أولويات المهام بكفاءة والالتزام بالمواعيد النهائية باستمرار.">
+                                    Efficiently prioritizing tasks and meeting deadlines consistently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="Work Experience" data-ar="الخبرات العملية">Work
+                    Experience</span>
+                <h2 class="section-title" data-en="My Professional Journey" data-ar="رحلتي المهنية">My
+                    Professional
+                    Journey</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">Feb 2026 - Present</div>
+                            <div class="timeline-content">
+                                <h3 data-en="Full-Stack Web Developer - Digilians"
+                                    data-ar="مطورة ويب شاملة - Digilians">Full-Stack Web Developer - Digilians
+                                </h3>
+                                <ul>
+                                    <li><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong> <span
+                                            data-en="Build scalable web applications with modern stack"
+                                            data-ar="بناء تطبيقات ويب قابلة للتطوير بتقنيات حديثة">Build
+                                            scalable web
+                                            applications with modern stack</span></li>
+                                    <li><strong data-en="Action:" data-ar="الإجراء:">Action:</strong> <span
+                                            data-en="Developed apps using React.js and Node.js with REST APIs and database integration"
+                                            data-ar="تطوير تطبيقات باستخدام React.js و Node.js مع REST APIs ودمج قواعد البيانات">Developed
+                                            apps using React.js and Node.js with REST APIs and database
+                                            integration</span></li>
+                                    <li><strong data-en="Result:" data-ar="النتيجة:">Result:</strong> <span
+                                            data-en="Delivered production-ready applications with clean, maintainable code"
+                                            data-ar="تقديم تطبيقات جاهزة للإنتاج بكود نظيف وقابل للصيانة">Delivered
+                                            production-ready applications with clean, maintainable code</span>
+                                    </li>
+                                </ul>
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1TPZStkKlwoU0Nc-gFgzVg22bmEwXnp8_/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View
+                                            Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-date">Jun 2024 - Jul 2024</div>
+                            <div class="timeline-content">
+                                <h3 data-en="Intern - Petrobel" data-ar="متدربة - بتروبل">Intern - Petrobel</h3>
+                                <ul>
+                                    <li><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong> <span
+                                            data-en="Create efficient database solutions"
+                                            data-ar="إنشاء حلول قواعد بيانات فعالة">Create efficient database
+                                            solutions</span></li>
+                                    <li><strong data-en="Action:" data-ar="الإجراء:">Action:</strong> <span
+                                            data-en="Developed SQL Server databases and PL/SQL functions"
+                                            data-ar="تطوير قواعد بيانات SQL Server ودوال PL/SQL">Developed SQL
+                                            Server
+                                            databases and PL/SQL functions</span></li>
+                                    <li><strong data-en="Result:" data-ar="النتيجة:">Result:</strong> <span
+                                            data-en="Optimized database performance and learned Oracle Forms"
+                                            data-ar="تحسين أداء قواعد البيانات وتعلم Oracle Forms">Optimized
+                                            database
+                                            performance and learned Oracle Forms</span></li>
+                                </ul>
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1lbdYPBDYQ6HI7FzkX7HG3rIhUNJ1GJfA/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View
+                                            Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-date">Aug 2023 - Sep 2023</div>
+                            <div class="timeline-content">
+                                <h3 data-en="Intern - General Petroleum Company (GPC)"
+                                    data-ar="متدربة - الشركة العامة للبترول (GPC)">Intern - General Petroleum
+                                    Company
+                                    (GPC)</h3>
+                                <ul>
+                                    <li><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong> <span
+                                            data-en="Learn enterprise-level development tools"
+                                            data-ar="تعلم أدوات التطوير على مستوى المؤسسات">Learn
+                                            enterprise-level
+                                            development tools</span></li>
+                                    <li><strong data-en="Action:" data-ar="الإجراء:">Action:</strong> <span
+                                            data-en="Worked with C#, SQL, and Windows Server basics"
+                                            data-ar="العمل مع C# و SQL وأساسيات Windows Server">Worked with C#,
+                                            SQL, and
+                                            Windows Server basics</span></li>
+                                    <li><strong data-en="Result:" data-ar="النتيجة:">Result:</strong> <span
+                                            data-en="Understanding of enterprise systems and database management"
+                                            data-ar="فهم أنظمة المؤسسات وإدارة قواعد البيانات">Understanding of
+                                            enterprise systems and database management</span>
+                                    </li>
+                                </ul>
+                                <div class="certificate-footer mt-3">
+                                    <a href="https://drive.google.com/file/d/1ae9yAPkOKoN5XmGAqs_wgDuUW9OW4iYo/view?usp=sharing"
+                                        target="_blank"
+                                        class="btn btn-link text-decoration-none w-100 d-inline-flex align-items-center justify-content-center gap-2 p-0"
+                                        style="color: #6c9e8f !important;">
+                                        <span data-en="View Certificate" data-ar="عرض الشهادة">View
+                                            Certificate</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="What I Offer" data-ar="ماذا أقدم">What I Offer</span>
+                <h2 class="section-title" data-en="My Services" data-ar="خدماتي">My Services</h2>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Service 1 - Database Design -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 data-en="Database Design" data-ar="تصميم قواعد البيانات">Database Design</h3>
+                        <p class="service-desc" data-en="Efficient schemas optimized for performance and scalability."
+                            data-ar="مخططات فعالة محسنة للأداء وقابلية التوسع.">
+                            Efficient schemas optimized for performance and scalability.
+                        </p>
+                        <div class="service-tags">
+                            <span>SQL Server</span>
+                            <span>Entity Framework</span>
+                            <span>T-SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 - API Development -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 data-en="API Development" data-ar="تطوير واجهات برمجة التطبيقات">API Development
+                        </h3>
+                        <p class="service-desc" data-en="Secure and documented RESTful APIs for web app."
+                            data-ar="واجهات برمجة تطبيقات RESTful آمنة وموثقة لتطبيقات الويب .">
+                            Secure and documented RESTful APIs for web app.
+                        </p>
+                        <div class="service-tags">
+                            <span>node JS</span>
+                            <span>JWT Auth</span>
+                            <span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Web Applications -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 data-en="Web Applications" data-ar="تطبيقات الويب">Web Applications</h3>
+                        <p class="service-desc"
+                            data-en="Building full-featured web applications using  React & Node JS."
+                            data-ar="بناء تطبيقات ويب متكاملة باستخدام React و Node JS">
+                            Building full-featured web applications using React & Node JS.
+                        </p>
+                        <div class="service-tags">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-5">
+                <a href="pricing.html" class="btn btn-success btn-lg px-5 py-3 shadow-sm"
+                    style="background: var(--primary-color, #6c9e8f); border-color: var(--primary-color, #6c9e8f); border-radius: 50px; font-weight: 600;"
+                    data-en="View Pricing Plans" data-ar="عرض خطط الأسعار">
+                    <i class="bi bi-tags-fill me-2"></i>
+                    <span>View Pricing Plans</span>
+                    <i class="bi bi-arrow-right ms-2" id="arrowIcon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="Featured Projects" data-ar="مشاريع مميزة">Featured
+                    Projects</span>
+                <h2 class="section-title" data-en="My Recent Work" data-ar="أعمالي الأخيرة">My Recent Work</h2>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <!-- AI vs AI - المشروع الأول -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <div class="project-image"
+                            style="width: 100%; height: 250px; overflow: hidden; background-color: #f0f0f0;">
+                            <img src="./logo/GP.jpg" alt="Library System Project" class="img-fluid w-100 h-100"
+                                style="object-fit: cover; display: block;">
+                        </div>
+                        <div class="project-content p-3">
+                            <h3 data-en="AI vs AI - Graduation Project"
+                                data-ar="الذكاء الاصطناعي ضد الذكاء الاصطناعي - مشروع التخرج">
+                                AI vs AI - Graduation Project
+                            </h3>
+                            <div class="project-details">
+                                <p><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong>
+                                    <span data-en="Build AI web application with image generation and detection"
+                                        data-ar="بناء تطبيق ويب بالذكاء الاصطناعي لتوليد واكتشاف الصور">
+                                        Build AI web application with image generation and detection
+                                    </span>
+                                </p>
+                                <p><strong data-en="Action:" data-ar="الإجراء:">Action:</strong>
+                                    <span data-en="Developed Flask API backend with database integration"
+                                        data-ar="تطوير خادم Flask API مع دمج قاعدة البيانات">
+                                        Developed Flask API backend with database integration
+                                    </span>
+                                </p>
+                                <p><strong data-en="Result:" data-ar="النتيجة:">Result:</strong>
+                                    <span data-en="Fully functional AI platform with real-time processing"
+                                        data-ar="منصة ذكاء اصطناعي كاملة الوظائف مع معالجة فورية">
+                                        Fully functional AI platform with real-time processing
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQL</span>
+                                <span>AI/ML</span>
+                            </div>
+                            <div class="project-links mt-3">
+                                <a href="https://github.com/ThanaaKhairy/AI-VS-AI" target="_blank"
+                                    class="btn btn-sm btn-outline-secondary w-100">
+                                    <i class="fa-brands fa-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happens Now - المشروع الثاني -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <div class="project-image"
+                            style="width: 100%; height: 250px; overflow: hidden; background-color: #f0f0f0;">
+                            <img src="./logo/Gemini_Generated_Image_2wqci82wqci82wqc.png" alt="Library System Project"
+                                class="img-fluid w-100 h-100" style="object-fit: cover; display: block;">
+                        </div>
+                        <div class="project-content p-3">
+                            <h3 data-en="Happens Now - News/Sports" data-ar="Happens Now - أخبار ورياضة">Happens Now -
+                                News/Sports</h3>
+                            <div class="project-details">
+                                <p><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong>
+                                    <span data-en="Build a dynamic news platform covering multiple categories"
+                                        data-ar="بناء منصة أخبار ديناميكية تغطي عدة أقسام">
+                                        Build a dynamic news platform covering multiple categories
+                                    </span>
+                                </p>
+                                <p><strong data-en="Action:" data-ar="الإجراء:">Action:</strong>
+                                    <span data-en="Developed using HTML, CSS, and JavaScript with responsive design"
+                                        data-ar="تم التطوير باستخدام HTML و CSS و JavaScript مع تصميم متجاوب">
+                                        Developed using HTML, CSS, and JavaScript with responsive design
+                                    </span>
+                                </p>
+                                <p><strong data-en="Result:" data-ar="النتيجة:">Result:</strong>
+                                    <span
+                                        data-en="Live news platform covering Politics, Economy, Sports, and Technology"
+                                        data-ar="منصة أخبار حية تغطي السياسة، الاقتصاد، الرياضة، والتكنولوجيا">
+                                        Live news platform covering Politics, Economy, Sports, and Technology
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links mt-3 d-flex gap-2">
+                                <a href="https://thanaakhairy.github.io/News-Sports/" target="_blank"
+                                    class="btn btn-sm btn-outline-primary flex-grow-1">
+                                    <i class="fa-solid fa-eye me-1"></i> Live
+                                </a>
+                                <a href="https://github.com/ThanaaKhairy/News-Sports" target="_blank"
+                                    class="btn btn-sm btn-outline-secondary flex-grow-1">
+                                    <i class="fa-brands fa-github me-1"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Library System - المشروع الثالث -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card h-100">
+                        <div class="project-image"
+                            style="width: 100%; height: 250px; overflow: hidden; background-color: #f0f0f0;">
+                            <img src="./logo/LMS.jpg" alt="Library System Project" class="img-fluid w-100 h-100"
+                                style="object-fit: cover; display: block;">
+                        </div>
+                        <div class="project-content p-3">
+                            <h3 data-en="Library System" data-ar="نظام المكتبة">Library System</h3>
+                            <div class="project-details">
+                                <p><strong data-en="Challenge:" data-ar="التحدي:">Challenge:</strong>
+                                    <span data-en="Complete library management system"
+                                        data-ar="نظام إدارة مكتبة متكامل">Complete library management system</span>
+                                </p>
+                                <p><strong data-en="Action:" data-ar="الإجراء:">Action:</strong>
+                                    <span data-en="Developed using Python and SQL"
+                                        data-ar="تم التطوير باستخدام Python و SQL">Developed using Python and SQL</span>
+                                </p>
+                                <p><strong data-en="Result:" data-ar="النتيجة:">Result:</strong>
+                                    <span data-en="Efficient book tracking and management"
+                                        data-ar="تتبع وإدارة فعالة للكتب">Efficient book tracking and management</span>
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Database</span>
+                            </div>
+                            <div class="project-links mt-3">
+                                <a href="https://github.com/ThanaaKhairy/LMS" target="_blank"
+                                    class="btn btn-sm btn-outline-secondary w-100">
+                                    <i class="fa-brands fa-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="My Achievements" data-ar="إنجازاتي">My Achievements</span>
+                <h2 class="section-title" data-en="Milestones & Awards" data-ar="إنجازات وجوائز">Milestones & Awards
+                </h2>
+            </div>
+
+            <!-- Achievements Grid -->
+            <div class="row g-4 mt-4">
+
+                <!-- Achievement 2 - Digilians Track -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3 data-en="Digilians Professional Track" data-ar="مسار Digilians الاحترافي">Digilians
+                                Professional Track</h3>
+                            <p class="achievement-desc"
+                                data-en="Full-Stack Web Development certification (React.js & Node.js)"
+                                data-ar="شهادة تطوير الويب الشامل (React.js و Node.js)">
+                                Full-Stack Web Development certification (React.js & Node.js)
+                            </p>
+                            <span class="achievement-date">2026</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement 1 - Graduation Project -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3 data-en="Graduation Project" data-ar="مشروع التخرج">Graduation Project</h3>
+                            <p class="achievement-desc"
+                                data-en="Excellent Grade - AI vs AI project with Flask and machine learning"
+                                data-ar="امتياز - مشروع الذكاء الاصطناعي ضد الذكاء الاصطناعي باستخدام Flask وتعلم الآلة">
+                                Excellent Grade - AI vs AI project with Flask and machine learning
+                            </p>
+                            <span class="achievement-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <!-- <span class="section-subtitle" data-en="Client Feedback" data-ar="آراء العملاء">Client Feedback</span> -->
+                <h2 class="section-title" data-en="Testimonials" data-ar="شهادات العملاء">Testimonials</h2>
+            </div>
+
+            <!-- Coming Soon Badge -->
+            <div class="coming-soon-wrapper text-center" data-aos="zoom-in">
+                <div class="coming-soon-card">
+                    <div class="coming-soon-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 data-en="Coming Soon!" data-ar="قريباً!">Coming Soon!</h3>
+                    <p class="coming-soon-text"
+                        data-en="Testimonials from my amazing clients are on their way. Stay tuned!"
+                        data-ar="شهادات عملائي الرائعين في الطريق. ترقبوا!">
+                        Testimonials from my amazing clients are on their way. Stay tuned!
+                    </p>
+                    <div class="coming-soon-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional: يمكنك إخفاء الـ testimonials الحقيقية مؤقتاً -->
+            <!-- 
+        <div class="row g-4 mt-4" style="display: none;">
+            <div class="col-md-6">
+                <div class="testimonial-card">
+                    ...
+                </div>
+            </div>
+        </div>
+        -->
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</span>
+                <h2 class="section-title" data-en="Let's Talk" data-ar="هيا نتحدث">Let's Talk</h2>
+            </div>
+            <div class="row g-5 mt-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <p data-en="Have a project in mind or want to discuss the latest in tech? Feel free to reach out."
+                            data-ar="هل لديك مشروع في ذهنك أو تريد مناقشة آخر التطورات في التكنولوجيا؟ لا تتردد في التواصل.">
+                            Have a project in mind or want to discuss the latest in tech? Feel free to reach
+                            out.
+                        </p>
+
+                        <!-- Location - مش لينك -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span data-en="Giza, Egypt" data-ar="الجيزة، مصر">Giza, Egypt</span>
+                        </div>
+
+                        <!-- Email - لينك شغال -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:thanaamater@gmail.com?subject=Contact%20from%20Portfolio"
+                                style="color: inherit; text-decoration: none;">
+                                thanaamater@gmail.com
+                            </a>
+                        </div>
+
+                        <!-- Phone - لينك شغال -->
+                        <div class="info-item">
+                            <i class="bi bi-phone-fill"></i>
+                            <a href="tel:01006477676" style="color: inherit; text-decoration: none;">
+                                01006477676
+                            </a>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/201006477676?text=Hi%20Thanaa%2C%20I%20saw%20your%20portfolio"
+                                target="_blank" style="color: inherit; text-decoration: none;">
+                                <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+                            </a>
+                        </div>
+
+                        <!-- Social Links - كلها شغالة -->
+                        <div class="social-links">
+                            <a href="https://github.com/ThanaaKhairy" target="_blank" rel="noopener" title="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/thanaa-khairy/" target="_blank" rel="noopener"
+                                title="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <!-- <a href=""
+                                        target="_blank" rel="noopener" title="WhatsApp">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://formsubmit.co/thanaamater@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New message from Thanaa's portfolio!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="./thank-you.html">
+                            <input type="hidden" name="_autoresponse"
+                                value="Thank you for contacting me! I'll get back to you soon.">
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        data-en="Your Name" data-ar="الاسم" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                        data-en="Email Address" data-ar="البريد الإلكتروني" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message"
+                                        data-en="Your Message" data-ar="رسالتك" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100" data-en="Send Message"
+                                        data-ar="إرسال الرسالة">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- القسم الرئيسي للفوتر -->
+        <div class="footer-main">
+            <div class="footer-grid">
+                <!-- العمود الأول: T.K والوصف -->
+                <div class="footer-col">
+                    <h2 class="footer-logo">T.K</h2>
+                    <p class="footer-description"
+                        data-en="Full-Stack Web Developer focused on building scalable web applications with React.js and Node.js, delivering clean and maintainable code."
+                        data-ar="مطورة ويب شاملة تركز على بناء تطبيقات ويب قابلة للتطوير باستخدام React.js و Node.js، مع تقديم كود نظيف وقابل للصيانة.">
+                        Full-Stack Web Developer focused on building scalable web applications with React.js and
+                        Node.js, delivering clean and maintainable code.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- العمود الثاني: Quick Links (كل الروابط هنا) -->
+                <div class="footer-col">
+                    <h3 class="footer-title" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <div class="quick-links-grid">
+                        <ul class="footer-menu">
+                            <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                            <li><a href="#about" data-en="About" data-ar="عنّي">About</a></li>
+                            <li><a href="#education" data-en="Education" data-ar="التعليم">Education</a></li>
+                            <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                        </ul>
+                        <ul class="footer-menu">
+                            <li><a href="#experience" data-en="Experience" data-ar="الخبرات">Experience</a></li>
+                            <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                            <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                            <li><a href="#testimonials" data-en="Testimonials" data-ar="التوصيات">Testimonials</a></li>
+                            <li><a href="#contact" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- العمود الثالث: Contact -->
+                <div class="footer-col">
+                    <h3 class="footer-title" data-en="Contact" data-ar="اتصل بي">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:thanaamater@gmail.com">thanaamater@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+201006477676">+20 1006477676</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span data-en="Giza, Egypt" data-ar="الجيزة، مصر">Giza, Egypt</span>
+                        </li>
+                    </ul>
+                    <!-- زر الوضع الليلي في الفوتر -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم السفلي: حقوق النشر -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>
+                    © 2026
+                    <span data-en="Thanaa Khairy. All rights reserved." data-ar="ثناء خيري. جميع الحقوق محفوظة.">Thanaa
+                        Khairy. All rights reserved.</span>
+                    <span class="built-with" data-en="Built with ❤️ & Code." data-ar="بُني بـ ❤️ وكود.">Built with ❤️ &
+                        Code.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
