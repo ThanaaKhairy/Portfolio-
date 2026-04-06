@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanaa Khairy - Pricing | Full-Stack Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts for Arabic (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pricing.css">
+
+</head>
+<body>
+    <!-- Back to Main Portfolio Link -->
+    <a href="index.html" class="back-link">
+        <i class="bi bi-arrow-left"></i>
+        <span data-en="Back to Portfolio" data-ar="العودة للرئيسية">Back to Portfolio</span>
+    </a>
+
+    <!-- Control Buttons (Theme + Language) -->
+    <div class="control-buttons">
+        <button class="control-btn lang-btn" id="langToggle">
+            <span id="langText">EN</span>
+            <i class="bi bi-globe"></i>
+        </button>
+        <button class="control-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars"></i>
+        </button>
+    </div>
+
+    <!-- Main Pricing Content -->
+    <div class="pricing-page">
+        <div class="container">
+            <!-- Header -->
+            <div class="pricing-header">
+                <span class="pricing-badge">
+                    <span data-en="💼 Transparent Pricing" data-ar="💰 تسعير شفاف">💼 Transparent Pricing</span>
+                </span>
+                <h1>
+                    <span data-en="Choose Your Plan" data-ar="اختر باقتك">Choose Your Plan</span>
+                </h1>
+                <p class="lead" data-en="No hidden fees. Every plan is scoped to deliver real value — from a simple landing page to a full web application."
+                   data-ar="لا رسوم خفية. كل باقة مصممة لتقديم قيمة حقيقية - من صفحة هبوط بسيطة إلى تطبيق ويب كامل.">
+                    No hidden fees. Every plan is scoped to deliver real value — from a simple landing page to a full web application.
+                </p>
+                <div class="pricing-note">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <span data-en="All plans include clean code, responsive design, and post-launch support. As a junior developer, I offer affordable rates to build my portfolio while delivering quality work."
+                          data-ar="جميع الباقات تشمل كود نظيف، تصميم متجاوب، ودعم بعد الإطلاق. كمطورة مبتدئة، أقدم أسعار مناسبة لبناء محفظتي مع تقديم عمل بجودة عالية.">
+                        All plans include clean code, responsive design, and post-launch support. As a junior developer, I offer affordable rates to build my portfolio while delivering quality work.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="row g-4">
+                <!-- Starter / Basic -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="card-category">
+                            <span data-en="Starter" data-ar="مبتدئ">Starter</span>
+                        </div>
+                        <div class="plan-name">
+                            <span data-en="Basic" data-ar="أساسي">Basic</span>
+                        </div>
+                        <div class="plan-price">
+                            <span data-en="$ 5–20" data-ar="$ ٥–٢٠">$ 5–20</span> <small><span data-en="/project" data-ar="/ مشروع">/project</span></small>
+                        </div>
+                        <div class="plan-description" data-en="Perfect for simple static websites or personal landing pages."
+                             data-ar="مثالي للمواقع الثابتة البسيطة أو صفحات الهبوط الشخصية.">
+                            Perfect for simple static websites or personal landing pages.
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Up to 3 Pages" data-ar="حتى ٣ صفحات">Up to 3 Pages</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Responsive Design" data-ar="تصميم متجاوب">Responsive Design</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="HTML/CSS/JavaScript" data-ar="HTML/CSS/JavaScript">HTML/CSS/JavaScript</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Contact Form (basic)" data-ar="نموذج اتصال أساسي">Contact Form (basic)</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="1 Revision Round" data-ar="جولة مراجعة واحدة">1 Revision Round</span></li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing">
+                            <span data-en="Get Started" data-ar="ابدأ الآن">Get Started</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Popular / Balance -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="popular-tag">
+                            <span data-en="Popular" data-ar="الأكثر طلباً">Popular</span>
+                        </div>
+                        <div class="card-category">
+                            <span data-en="Balance" data-ar="متوازن">Balance</span>
+                        </div>
+                        <div class="plan-name">
+                            <span data-en="Balance" data-ar="متوازن">Balance</span>
+                        </div>
+                        <div class="plan-price">
+                            <span data-en="$ 40–70" data-ar="$ ٤٠–٧٠">$ 40–70</span> <small><span data-en="/project" data-ar="/ مشروع">/project</span></small>
+                        </div>
+                        <div class="plan-description" data-en="Ideal for business websites with dynamic content and basic React."
+                             data-ar="مثالي لمواقع الأعمال ذات المحتوى الديناميكي و React الأساسي.">
+                            Ideal for business websites with dynamic content and basic React.
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Up to 5 Pages" data-ar="حتى ٥ صفحات">Up to 5 Pages</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Everything in Basic" data-ar="كل شيء في الأساسي">Everything in Basic</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="React.js Components" data-ar="مكونات React.js">React.js Components</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Basic API Integration" data-ar="دمج API أساسي">Basic API Integration</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="2 Revision Rounds" data-ar="جولتان مراجعة">2 Revision Rounds</span></li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing">
+                            <span data-en="Get Started" data-ar="ابدأ الآن">Get Started</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PRO -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="card-category">
+                            <span data-en="Professional" data-ar="احترافي">Professional</span>
+                        </div>
+                        <div class="plan-name">
+                            <span data-en="PRO" data-ar="احترافي">PRO</span>
+                        </div>
+                        <div class="plan-price">
+                            <span data-en="$ 80–100" data-ar="$ ٨٠–١٠٠">$ 80–100</span> <small><span data-en="/project" data-ar="/ مشروع">/project</span></small>
+                        </div>
+                        <div class="plan-description" data-en="Full-stack project with React, Node.js, and database."
+                             data-ar="مشروع كامل مع React و Node.js وقاعدة بيانات.">
+                            Full-stack project with React, Node.js, and database.
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Up to 8 Pages" data-ar="حتى ٨ صفحات">Up to 8 Pages</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Everything in Balance" data-ar="كل شيء في المتوازن">Everything in Balance</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Node.js Backend" data-ar="خادم Node.js">Node.js Backend</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Database Integration" data-ar="دمج قاعدة بيانات">Database Integration</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="RESTful API" data-ar="RESTful API">RESTful API</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="3 Revision Rounds" data-ar="٣ جولات مراجعة">3 Revision Rounds</span></li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing">
+                            <span data-en="Get Started" data-ar="ابدأ الآن">Get Started</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Custom / Enterprise -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="card-category">
+                            <span data-en="Custom" data-ar="مخصص">Custom</span>
+                        </div>
+                        <div class="plan-name">
+                            <span data-en="Let's Talk" data-ar="هيا نتحدث">Let's Talk</span>
+                        </div>
+                        <div class="plan-price">
+                            <span data-en="Flexible" data-ar="مرن">Flexible</span>
+                        </div>
+                        <div class="plan-description" data-en="Tailored solutions for complex projects with specific requirements."
+                             data-ar="حلول مخصصة للمشاريع المعقدة ذات المتطلبات الخاصة.">
+                            Tailored solutions for complex projects with specific requirements.
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Everything in PRO" data-ar="كل شيء في الاحترافي">Everything in PRO</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Custom Features" data-ar="ميزات مخصصة">Custom Features</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Advanced Functionality" data-ar="وظائف متقدمة">Advanced Functionality</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Priority Support" data-ar="دعم ذو أولوية">Priority Support</span></li>
+                            <li><i class="bi bi-check-lg"></i> <span data-en="Ongoing Maintenance" data-ar="صيانة مستمرة">Ongoing Maintenance</span></li>
+                        </ul>
+                        <a href="#contact" class="btn-pricing custom">
+                            <span data-en="Contact Me" data-ar="اتصل بي">Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional Footer Note -->
+            <div class="text-center mt-5">
+                <p style="color: var(--text-color); font-size: 0.9rem;">
+                    <i class="bi bi-shield-check me-2" style="color: var(--primary-color);"></i>
+                    <span data-en="All projects include clean code, documentation, and 2 weeks of basic support."
+                          data-ar="جميع المشاريع تشمل كود نظيف، توثيق، وأسبوعين من الدعم الأساسي.">
+                        All projects include clean code, documentation, and 2 weeks of basic support.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./pricing.js"></script>
+</body>
+</html>
