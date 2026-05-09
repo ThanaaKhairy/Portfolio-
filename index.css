@@ -658,7 +658,7 @@ body {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
